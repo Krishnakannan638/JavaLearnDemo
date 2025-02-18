@@ -2,8 +2,54 @@ import java.util.*;
 
 public class App {
     public static void main(String[] args) throws Exception {
-        String test = "()";
-        System.out.println( isValid(test));
+        int[] n = { 9, 8, 7, 6, 5, 4, 3, 2, 1, 0 };
+        int[] ans = plusOneArray(n);
+
+        for (int i : ans) {
+            System.out.print(i + " ");
+        }
+    }
+
+    public static int[] plusOneArray(int[] n) {
+        int size = n.length - 1;
+        if (n[size] != 9) {
+            n[size]++;
+            return n;
+        }
+        List<Integer> lis = new ArrayList<>();
+        long num = 0;
+        for (int i = 0; i < n.length; i++) {
+            num = num * 10 + n[i];
+        }
+        num += 1;
+        long sum = 0;
+        while (num != 0) {
+            sum = num % 10;
+            lis.add((int) sum);
+            num /= 10;
+        }
+        lis = lis.reversed();
+        System.out.print(lis);
+        int[] arr = new int[lis.size()];
+        for (int i = 0; i <= lis.size() - 1; i++) {
+            arr[i] = lis.get(i);
+        }
+        return arr;
+
+    }
+
+    public static int revarseNumber(int num) {
+        int r = 0;
+        while (num != 0) {
+            int n = num % 10;
+            num /= 10;
+            if (r > Integer.MAX_VALUE / 10 || r == Integer.MAX_VALUE / 10 && n > 7)
+                return 0;
+            if (r < Integer.MIN_VALUE / 10 || r == Integer.MIN_VALUE / 10 && n < -8)
+                return 0;
+            r = r * 10 + n;
+        }
+        return r;
     }
 
     public static boolean isValid(String s) {
