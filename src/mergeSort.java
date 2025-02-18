@@ -1,11 +1,11 @@
 public class mergeSort {
 
-    public void mergeSort(int[] arr, int left, int right) {
+    public void MergeSort(int[] arr, int left, int right) {
         if (left < right) {
             int mid = left + (right - left) / 2;
 
-            mergeSort(arr, left, mid); // Sort left half
-            mergeSort(arr, mid + 1, right); // Sort right half
+            MergeSort(arr, left, mid); // Sort left half
+            MergeSort(arr, mid + 1, right); // Sort right half
 
             merge(arr, left, mid, right); // Merge sorted halves
         }

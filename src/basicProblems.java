@@ -37,7 +37,7 @@ public class basicProblems {
 
     public static int searchNum(int[] a, int b) {
         int[] arr = a;
-        int search = b;
+        // int search = b;
         int pos = 0;
         for (int i = 0; i < arr.length; i++) {
             pos++;
@@ -148,7 +148,7 @@ public class basicProblems {
     }
 
     public static int numberFactorial(int a, int b) {
-        List<Integer> al = new ArrayList<>();
+        // List<Integer> al = new ArrayList<>();
         for (int i = 1; i <= a; i++) {
             if ((a % i) == 0) {
                 System.out.print(i + " ");

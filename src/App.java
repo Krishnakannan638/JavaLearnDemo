@@ -2,12 +2,56 @@ import java.util.*;
 
 public class App {
     public static void main(String[] args) throws Exception {
-        int[] n = { 9, 8, 7, 6, 5, 4, 3, 2, 1, 0 };
-        int[] ans = plusOneArray(n);
+        doublyLinkedList dll = new doublyLinkedList();
+        dll.insertAtBeginning(8);
+        dll.insertAtBeginning(5);
+        dll.insertAtBeginning(4);
+        dll.insertAtBeginning(9);
+        dll.insertAtBeginning(3);
+        dll.displayDLinkedList();
+        System.out.println();
+        dll.displayRDll();
+        System.out.println();
+        // dll.deleteAtPos(3);
+        // dll.deleteAtEnd();
+        dll.insertAtEnd(10);
+        dll.insertAtEnd(12);
 
-        for (int i : ans) {
-            System.out.print(i + " ");
-        }
+        dll.displayDLinkedList();
+        System.out.println();
+        dll.displayRDll();
+        // reverselLinkedList rll = new reverselLinkedList();
+        // rll.insertData(1);
+        // rll.insertData(2);
+        // rll.insertData(3);
+        // rll.insertData(4);
+        // rll.displayAtReveral();
+        // System.out.println();
+        // rll.reversedList();
+        // rll.displayAtReveral();
+
+        // linkedlist<Integer> ll = new linkedlist<>();
+        // ll.insertAtBeginning(4);
+        // ll.insertAtBeginning(6);
+        // ll.insertAtBeginning(2);
+        // ll.insertAtBeginning(8);
+        // ll.displayLinkedList();
+        // System.out.println();
+        // ll.insertAtPos(4, 10);
+        // ll.insertAtPos(5, 7);
+        // ll.displayLinkedList();
+        // System.out.println();
+        // // ll.deleteAtPos(4);
+        // // System.out.println(ll.getIndex(4));
+        // // ll.updateIndex(0, 3);
+        // // ll.deleteAtEnd();
+        // // ll.deleteAtBeginning();
+        // ll.insertAtEnd(5);
+        // ll.insertAtEnd(9);
+        // System.out.println(ll.search(4));
+        // System.out.println(ll.contains(3));
+
+        // ll.displayLinkedList();
     }
 
     public static int[] plusOneArray(int[] n) {
