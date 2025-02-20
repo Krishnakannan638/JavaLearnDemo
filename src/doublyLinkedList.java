@@ -69,7 +69,7 @@ public class doublyLinkedList {
         }
         temp.next = newNode;
         newNode.prev = temp;
-        
+
     }
 
     public void deleteAtPos(int pos) {
@@ -102,5 +102,13 @@ public class doublyLinkedList {
         }
         tail = prev;
         prev.next = null;
+    }
+
+    public void deleteAtBeginning() {
+        if (head == null) {
+            throw new IndexOutOfBoundsException("List is empty");
+        }
+        head = head.next;
+        head.next.prev = head.prev;
     }
 }

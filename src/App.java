@@ -2,25 +2,28 @@ import java.util.*;
 
 public class App {
     public static void main(String[] args) throws Exception {
-        doublyLinkedList dll = new doublyLinkedList();
-        dll.insertAtBeginning(8);
-        dll.insertAtBeginning(5);
-        dll.insertAtBeginning(4);
-        dll.insertAtBeginning(9);
-        dll.insertAtBeginning(3);
-        dll.displayDLinkedList();
-        System.out.println();
-        dll.displayRDll();
-        System.out.println();
-        // dll.deleteAtPos(3);
-        // dll.deleteAtEnd();
-        dll.insertAtEnd(10);
-        dll.insertAtEnd(12);
+        pattern p = new pattern();
+        p.pattern22(5);
 
-        dll.displayDLinkedList();
-        System.out.println();
-        dll.displayRDll();
-        // reverselLinkedList rll = new reverselLinkedList();
+        // doublyLinkedList dll = new doublyLinkedList();
+        // dll.insertAtBeginning(8);
+        // dll.insertAtBeginning(5);
+        // dll.insertAtBeginning(4);
+        // dll.insertAtBeginning(9);
+        // dll.insertAtBeginning(3);
+        // dll.displayDLinkedList();
+        // System.out.println();
+        // dll.displayRDll();
+        // System.out.println();
+        // // dll.deleteAtPos(3);
+        // // dll.deleteAtEnd();
+        // // dll.insertAtEnd(10);
+        // // dll.insertAtEnd(12);
+        // dll.deleteAtBeginning();
+        // dll.displayDLinkedList();
+        // System.out.println();
+        // dll.displayRDll();
+        // // reverselLinkedList rll = new reverselLinkedList();
         // rll.insertData(1);
         // rll.insertData(2);
         // rll.insertData(3);
