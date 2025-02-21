@@ -1,3 +1,4 @@
+package DSA;
 class bobbleSort {
 
     public void bubbleSort(int[][] arr) {

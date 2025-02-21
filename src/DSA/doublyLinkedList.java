@@ -1,3 +1,4 @@
+package DSA;
 public class doublyLinkedList {
     Node head;
     Node tail;

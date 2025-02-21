@@ -1,3 +1,4 @@
+package DSA;
 class linkedlist<T> {
     Node head;
 
@@ -200,4 +201,6 @@ class reverselLinkedList {
         }
         head = prev;
     }
+
+    
 }

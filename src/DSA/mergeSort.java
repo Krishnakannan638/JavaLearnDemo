@@ -1,3 +1,4 @@
+package DSA;
 public class mergeSort {
 
     public void MergeSort(int[] arr, int left, int right) {

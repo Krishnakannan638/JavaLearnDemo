@@ -1,9 +1,52 @@
 import java.util.*;
 
+import BasicMath.*;
+
 public class App {
     public static void main(String[] args) throws Exception {
-        pattern p = new pattern();
-        p.pattern22(5);
+
+        int[] arr = { 3, 4, 6, 7, 9, 12, 16, 17 };
+        int target = 3;
+        System.out.println(serachMethods.binarySearch(arr, target));
+
+        // basicMath m = new basicMath();
+        // System.out.println(m.countDigit(123));
+
+        // Queues q = new Queues();
+        // q.enqueue(4);
+        // q.enqueue(2);
+        // q.enqueue(8);
+        // System.out.println(q.dequeue());
+        // System.out.println(q.dequeue());
+        // System.out.println(q.dequeue());
+
+        // LinkedListStacks s = new LinkedListStacks();
+        // s.push(1);
+        // s.push(2);
+        // s.push(8);
+        // s.push(4);
+        // // s.push(5);
+        // System.out.println(s.pop());
+        // System.out.println(s.peek());
+        // System.out.println(s.isEmpty());
+
+        // exercise e = new exercise();
+        // int[] arr1 = { 1, 2 };
+        // int[] arr2 = { 3,4 };
+        // e.medianArray(arr1, arr2);
+        // e.insert(4);
+        // e.insert(2);
+        // e.insert(5);
+        // e.insert(7);
+        // e.insert(7);
+        // e.insert(7);
+        // e.insert(7);
+        // e.display();
+        // System.out.println();
+        // e.remove(7);
+        // e.display();
+        // pattern p = new pattern();
+        // p.pattern22(5);
 
         // doublyLinkedList dll = new doublyLinkedList();
         // dll.insertAtBeginning(8);
