@@ -1,16 +1,37 @@
 import java.util.*;
-
-import BasicMath.*;
+import sorting.sortingMethods;
 
 public class App {
+
     public static void main(String[] args) throws Exception {
 
-        int[] arr = { 3, 4, 6, 7, 9, 12, 16, 17 };
-        int target = 3;
-        System.out.println(serachMethods.binarySearch(arr, target));
+        sortingMethods ss = new sortingMethods();
+        int[] arr = { 22, 10, 14, 13, 6, 17 };
+        ss.quickSort(arr);
 
+        // demodoublyList d = new demodoublyList();
+        // d.insertAtBeginningList(4);
+        // d.insertAtBeginningList(5);
+        // d.insertAtBeginningList(6);
+        // d.insertAtBeginningList(7);
+        // d.display();
+        // System.out.println();
+        // d.insertAtPos(4, 3);
+        // d.insertAtPos(5, 2);
+        // d.deleteAtBeginning();
+        // d.deleteAtBeginning();
+        // d.deleteAtEnd();
+        // d.deleteAtPos(5);
+        // d.display();
+        // System.out.println();
+        // d.Rdisplay();
+
+        // int target = 3;
+        // System.out.println(serachMethods.binarySearch(arr, target));
         // basicMath m = new basicMath();
-        // System.out.println(m.countDigit(123));
+        // String pattern = "abba", s = "dog cat cat dog";
+        // int[] arr = { 1,1,1,3,3,4,3,2,4,2 };
+        // System.out.println(m.wordPattern(pattern, s));
 
         // Queues q = new Queues();
         // q.enqueue(4);
@@ -35,14 +56,17 @@ public class App {
         // int[] arr2 = { 3,4 };
         // e.medianArray(arr1, arr2);
         // e.insert(4);
-        // e.insert(2);
+        // e.insert(4);
+        // e.insert(4);
         // e.insert(5);
-        // e.insert(7);
-        // e.insert(7);
-        // e.insert(7);
         // e.insert(7);
         // e.display();
         // System.out.println();
+        // e.removeSortedList();
+        // e.display();
+        // e.insert(7);
+        // e.insert(7);
+        // e.display();
         // e.remove(7);
         // e.display();
         // pattern p = new pattern();
